@@ -1,28 +1,14 @@
 ===========================
 How to Use 0-add_integer.py
-=dd_integer = __import__('0-add_integer').add_integer
+===========================
 
-print(add_integer(1, 2))
-print(add_integer(100, -2))
-print(add_integer(2))
-print(add_integer(100.3, -2))
-try:
-    print(add_integer(4, "School"))
-except Exception as e:
-    print(e)
-try:
-    print(add_integer(None))
-except Exception as e:
-    print(e)
-==========================
-
-This module defines an integer addition function ``add_integer(a, b=98)``.
+This module defines an integer addition function `add_integer(a, b=98)`.
 
 Usage
 =====
 
-``add_integer(...)``` returns the addition of its two arguments. For numbers,
-that value is equivalent to using the ``+`` operator.
+`add_integer(...)` returns the addition of its two arguments. For numbers,
+that value is equivalent to using the `+` operator.
 
 ::
 
@@ -71,7 +57,7 @@ The second argument is optional - by default, it is 98.
 Non-Numbers
 ===========
 
-``add_integer()`` expects that both arguments are either integers or floats.
+`add_integer()` expects that both arguments are either integers or floats.
 If either argument is a non-integer and non-float, a TypeError is raised:
 
 ::
@@ -114,7 +100,7 @@ The function will fail if infinity is provided.
     >>> add_integer(float('inf'))
     Traceback (most recent call last):
     OverflowError: cannot convert float infinity to integer
-     
+
 
 ::
 
@@ -122,7 +108,7 @@ The function will fail if infinity is provided.
     Traceback (most recent call last):
     OverflowError: cannot convert float infinity to integer
 
-And again with NaN numbers.
+Same with NaN numbers.
 
 ::
 

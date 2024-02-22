@@ -1,9 +1,3 @@
-2-matrix_divided.py
-
-Details
-
-Activity
-
 #!/usr/bin/python3
 """Defines a matrix division function."""
 
